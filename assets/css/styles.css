@@ -1,0 +1,262 @@
+body {
+  background-color: #000;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  color: #fff;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+
+section {
+  margin: 30px 0px;
+}
+
+@media only screen and (max-width: 991px) {
+  section {
+    display: block !important;
+  }
+}
+
+header {
+  border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+  text-align: center;
+}
+
+section.img-principal figure img {
+  width: 100%;
+}
+
+section.txt-img {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: auto;
+}
+
+section.txt-img .box-txt {
+  padding: 1rem;
+}
+
+section.txt-img .box-txt p {
+  margin-bottom: .7rem !important;
+}
+
+section.txt-img figure {
+  margin-bottom: 0px;
+}
+
+section.txt-img figure img {
+  width: 100%;
+}
+
+section.caract {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: auto;
+  margin-bottom: 2rem;
+}
+
+section.caract div {
+  padding: .5rem;
+}
+
+section.caract div p {
+  font-size: 22px;
+}
+
+section.caract div i {
+  font-size: 54px;
+  margin-bottom: 1rem;
+}
+
+section.caract div:first-child {
+  text-align: center;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+}
+
+section.caract div:first-child h3 {
+  padding: 1rem 0rem;
+  margin-bottom: .5rem;
+}
+
+section.caract div:nth-child(2) {
+  text-align: center;
+  -ms-grid-column: 1;
+  grid-column: 1 / 1;
+  -ms-grid-row: 2;
+  grid-row: 2 / 2;
+}
+
+section.caract div:nth-child(3) {
+  text-align: center;
+  -ms-grid-column: 2;
+  grid-column: 2 / 2;
+  -ms-grid-row: 2;
+  grid-row: 2 / 2;
+}
+
+section.caract div:nth-child(4) {
+  text-align: center;
+  -ms-grid-column: 3;
+  grid-column: 3 / 3;
+  -ms-grid-row: 2;
+  grid-row: 2 / 2;
+}
+
+section.galeria {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0px 20px;
+  grid-auto-rows: auto;
+  margin-top: 0px;
+}
+
+section.galeria figure {
+  margin-bottom: 0px;
+}
+
+section.galeria figure img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 991px) {
+  section.galeria figure img {
+    margin: .7rem 0rem;
+  }
+}
+
+section.galeria div:nth-child(1) {
+  text-align: center;
+  -ms-grid-column: 1;
+  grid-column: 1 / 1;
+  -ms-grid-row: 2;
+  grid-row: 2 / 2;
+}
+
+section.galeria div:nth-child(2) {
+  text-align: center;
+  -ms-grid-column: 2;
+  grid-column: 2 / 2;
+  -ms-grid-row: 2;
+  grid-row: 2 / 2;
+}
+
+section.galeria div:nth-child(3) {
+  text-align: center;
+  -ms-grid-column: 3;
+  grid-column: 3 / 3;
+  -ms-grid-row: 2;
+  grid-row: 2 / 2;
+}
+
+footer {
+  border-top: 1px solid #ccc;
+  text-align: center;
+  padding: 1rem 0rem;
+}
+
+.popup-wrapper {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 999;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+.popup-content {
+  position: relative;
+  overflow: hidden;
+  padding: 16px;
+  width: 50%;
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #fff;
+  min-height: 400px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .popup-content {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .popup-content {
+    width: 95%;
+  }
+}
+
+.popup-content .close {
+  color: #FFFFFF;
+  font-size: 21px;
+  background: #000;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 2px 5px;
+  z-index: 99;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  font-weight: bold;
+}
+
+.popup-content p {
+  margin: 60px 30px  50px 30px;
+  position: relative;
+  z-index: 99;
+  color: #000;
+  opacity: 1 !important;
+}
+
+@media only screen and (max-width: 991px) {
+  .popup-content p {
+    margin-top: 70px;
+  }
+}
+
+.popup-content img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: .2;
+}
+/*# sourceMappingURL=styles.css.map */
